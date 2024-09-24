@@ -1,6 +1,6 @@
 # modis_cloud_radiative_kernels
 
-Code for decomposing the shortwave effective radiative forcing from aerosol-cloud interactions (SW ERFaci) into components associated with the Twomey effect and LWP and CF adjustments is provided along with the associated SW cloud radiative kernel. 
+Code for decomposing the shortwave effective radiative forcing from aerosol-cloud interactions (SW ERFaci) from liquid clouds into components associated with the Twomey effect and LWP and CF adjustments is provided along with the associated SW cloud radiative kernel. 
 
 ## References 
 - Zelinka, M. D., S. A. Klein, and D. L. Hartmann, 2012: [Computing and Partitioning Cloud Feedbacks Using 
@@ -21,7 +21,7 @@ Cloud Adjustments Using Cloud Radiative Kernels](https://egusphere.copernicus.or
 
 ## Input
 
-The associated code requires the following inputs:
+The associated code requires the following inputs, including new effective radius x liquid water path cloud fraction joint histograms from the MODIS satellite simulator:
 
 | Frequency | Name | Description | Unit | File Format |
 |-----------|------|-------------|------|-------------|
