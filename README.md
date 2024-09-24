@@ -18,8 +18,8 @@ tive Effects to Meteorological Perturbations over the Global Oceans](https://jou
 - Wall, C. J., Storelvmo, T., A. Possner, 2023: [Global observations of aerosol indirect effects from marine liquid clouds](https://acp.copernicus.org/articles/23/13125/2023/). Atmospheric Chemistry and Physics, 23, 13 125–13 141, doi:10.5194/acp-23-13125-2023.
 - Zelinka, M., Chao, L.-W., Myers, T., Qin, Y., and Klein, S., preprint: [Technical Note: Recommendations for Diagnosing Cloud Feedbacks and Rapid
 Cloud Adjustments Using Cloud Radiative Kernels](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-2782/). EGUsphere, 1–27.
-## Input
 
+## Input
 
 The associated code requires the following inputs:
 
@@ -34,4 +34,4 @@ The associated code requires the following inputs:
 
 The SW cloud radiative kernel is available to download at https://github.com/brandonduran/modis_cloud_radiative_kernels/data
 
-ensmean_SW_kernel.nc: SW cloud radiative kernel developed using zonal mean temperature and humidity profiles averaged across control runs of five CMIP6-era climate models as input to the RRMTG radiation code. These are best for diagnosing feedbacks / forcing relative to a modeled pre-industrial climate state. Please refer to Wall et al. (2023) and Duran et al. (in prep) for details.
+- ensmean_SW_kernel.nc: SW cloud radiative kernel developed using zonal mean temperature and humidity profiles averaged across control runs of five CMIP6-era climate models as input to the RRMTG radiation code. These are best for diagnosing feedbacks / forcing relative to a modeled pre-industrial climate state. Please refer to Wall et al. (2023) and Duran et al. (in prep) for details.
