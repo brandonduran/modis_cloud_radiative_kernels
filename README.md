@@ -1,5 +1,7 @@
 # modis_cloud_radiative_kernels
 
+[![DOI](https://zenodo.org/badge/835898737.svg)](https://zenodo.org/doi/10.5281/zenodo.13839355)
+
 Code for decomposing the shortwave effective radiative forcing from aerosol-cloud interactions (SW ERFaci) from liquid clouds into components associated with the Twomey effect and LWP and CF adjustments is provided along with the associated SW cloud radiative kernel. The provided environment.yml file should enable the creation of a conda environment that allows the notebook to be executed.
 
 ## References 
