@@ -37,3 +37,7 @@ The associated code requires the following inputs, including new effective radiu
 The SW cloud radiative kernel is available to download at https://github.com/brandonduran/modis_cloud_radiative_kernels/tree/main/data
 
 - ensmean_SW_kernel.nc: SW cloud radiative kernel developed using zonal mean temperature and humidity profiles averaged across control runs of five CMIP6-era climate models as input to the RRMTG radiation code. These are best for diagnosing feedbacks / forcing relative to a modeled pre-industrial climate state. Please refer to Wall et al. (2023) and Duran et al. (in prep) for details.
+
+## Running the Notebook
+
+Inside the data folder, two separate new folders should be created: "CTL" and "PDaer". Each folder should contain five files, corresponding to the first five variables listed in the input table above for each simulation. The naming convention should be *VARNAME.nc*, eg *TS.nc*.
