@@ -40,4 +40,4 @@ The SW cloud radiative kernel is available to download at https://github.com/bra
 
 ## Running the Notebook
 
-Inside the data folder, two separate new folders should be created: "CTL" and "PDaer". Each folder should contain five files, corresponding to the first five variables listed in the input table above for each simulation. The naming convention should be *VARNAME.nc*, eg *TS.nc*.
+Inside the data folder, two separate new folders should be created: "CTL" and "PDaer". Each folder should contain five files, corresponding to the first five variables listed in the input table above for each simulation. The naming convention should be *VARNAME.nc*, eg *TS.nc*. These netCDF files are too big to host on Github, but will happily be shared if requested (email bmduran at ucsd dot edu).
