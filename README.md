@@ -38,6 +38,8 @@ The SW cloud radiative kernel is available to download at https://github.com/bra
 
 - ensmean_SW_kernel.nc: SW cloud radiative kernel developed using zonal mean temperature and humidity profiles averaged across control runs of five CMIP6-era climate models as input to the RRMTG radiation code. These are best for diagnosing feedbacks / forcing relative to a modeled pre-industrial climate state. Please refer to Wall et al. (2023) and Duran et al. (in prep) for details.
 
+The inputs listed above are too large to host on Github. The data is available to download through the UCSD library digital collections: https://doi.org/10.6075/J0P26ZF1
+
 ## Running the Notebook
 
-Inside the data folder, two separate new folders should be created: "CTL" and "PDaer". Each folder should contain five files, corresponding to the first five variables listed in the input table above for each simulation. The naming convention should be *VARNAME.nc*, eg *TS.nc*. These netCDF files are too big to host on Github, but will happily be shared if requested (email bmduran at ucsd dot edu).
+Inside the data folder, two separate new folders should be created: "CTL" and "PDaer". Each folder should contain five files, corresponding to the first five variables listed in the input table above for each simulation. The naming convention should be *VARNAME.nc*, eg *TS.nc*. These netCDF files are too big to host on Github, but are available through the UCSD library digital collections.
