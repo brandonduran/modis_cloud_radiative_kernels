@@ -45,8 +45,13 @@ def KT_decomposition_general(c1, c2, Ksw, Itot, Itot_mean):
     dRsw_prop = Ksw0 * sum_dc  # SW amount component (CF adjustment)
     
     # Obscuration Change of Variables
-    sum_dc = ( sum_dc / (100.0 - Itot) ) * (100.0 - Itot_mean)
-    dRsw_prop_unobs = Ksw0 * sum_dc  # SW amount component (CF adjustment, obscuration-corrected)
+    # Itot can be exactly 100 (full liquid<->non-liquid MODIS classification
+    # flip) in near-total-polar-night grid cells/months, where the liquid-cloud
+    # retrieval itself is degenerate; the (100 - Itot) denominator is then exactly
+    # zero. This case is radiatively negligible (no sunlight to reflect), so map to zero.
+    denom = 100.0 - Itot
+    sum_dc_unobs = xr.where(denom != 0, (sum_dc / denom.where(denom != 0, 1.0)) * (100.0 - Itot_mean), 0.0)
+    dRsw_prop_unobs = Ksw0 * sum_dc_unobs  # SW amount component (CF adjustment, obscuration-corrected)
         
     dRsw_dreff = (Ksw_r_prime * (dc_star.sum(dim="lwp"))).sum(
         dim="reff"
